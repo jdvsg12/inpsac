@@ -1,8 +1,11 @@
+import Biography from "@/components/conteiner/biography";
+import FormContact from "@/components/conteiner/formContact";
 
-const page = () => {
+export default function page() {
     return (
-        <div>page</div>
+        <div>
+            <Biography />
+            <FormContact />
+        </div>
     )
 }
-
-export default page
