@@ -44,7 +44,7 @@ const FormContact = () => {
             <Card className="rounded-md mx-auto grid max-md:w-11/12">
                 <CardHeader>
                     <CardTitle className="my-2 text-xl md:text-3xl lg:text-4xl xl:text-5xl text-backgroundGreen">Contacto</CardTitle>
-                    <CardDescription className=" ">Agenda tu cita o contáctame para cualquier consulta. Estoy aquí para ayudarte. ¡Escríbeme ahora!</CardDescription>
+                    <CardDescription className="text-lg md:text-xl">Agenda tu cita o contáctame para cualquier consulta. Estoy aquí para ayudarte. ¡Escríbeme ahora!</CardDescription>
                 </CardHeader>
                 <CardContent>
                     <Form {...form}>
