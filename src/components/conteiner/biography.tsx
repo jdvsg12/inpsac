@@ -5,7 +5,7 @@ const Biography = () => {
     return (
         <section className="h-full  py-10 md:py-12 md:px-28 flex flex-col justify-center">
             <h2 className="text-5xl text-center md:text-left text-secondary font-bold uppercase">eduardo montenegro</h2>
-            <Card className="rounded-md mx-auto border-0 grid w-full">
+            <Card className="rounded-md mx-auto border-0 grid w-11/12 md:w-full ">
                 <CardHeader>
                     <CardTitle className="my-2 text-lg md:text-2xl text-backgroundGreen">Psicologo</CardTitle>
                     <CardTitle className="my-2 text-base md:text-xl text-backgroundGreen capitalize">esp. psicopatologia y salud mental</CardTitle>

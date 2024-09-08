@@ -48,7 +48,7 @@ export function Nav() {
                         <span className="sr-only">Toggle navigation menu</span>
                     </Button>
                 </SheetTrigger>
-                <SheetContent side="left">
+                <SheetContent side="right">
                     <nav className="grid gap-6 text-lg font-medium">
                         <Link href="/" className="flex items-center gap-2 text-lg font-semibold">
                             <Package2 className="h-6 w-6" />
