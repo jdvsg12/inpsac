@@ -7,13 +7,6 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   color: var(--foreground);
   background: var(--background);
@@ -23,5 +16,41 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --background-secondary: #f9f9f9;
+    --background-green: #8ea09c;
+    --foreground: #0a0a0a;
+    --card: #ffffff;
+    --card-foreground: #4a1f21;
+    --popover: #ffffff;
+    --popover-foreground: #4a1f21;
+    --primary: #4a1f21;
+    --primary-foreground: #fafafa;
+    --secondary: #8ea09c;
+    --secondary-foreground: #ffffff;
+    --muted: #8ea09c;
+    --muted-foreground: #737373;
+    --accent: #8ea09c;
+    --accent-foreground: #4a1f21;
+    --destructive: #e53935;
+    --destructive-foreground: #fafafa;
+    --border: #f2e0bd;
+    --input: #e5e5e5;
+    --ring: #8ea09c;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
