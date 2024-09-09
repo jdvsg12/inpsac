@@ -1,5 +1,6 @@
 'use client'
 import { Button } from "@/components/ui/button"
+import { useToast } from "@/hooks/use-toast"
 import {
     Card,
     CardContent,
@@ -23,6 +24,7 @@ const formSchema = z.object({
 
 
 const FormContact = () => {
+    const { toast } = useToast()
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -34,9 +36,19 @@ const FormContact = () => {
     })
 
     function handleSubmit(values: z.infer<typeof formSchema>) {
-        console.log(values)
-        form.reset();
+        const datetime = z.string().date();
 
+        const currentDate = new Date().toISOString().split('T')[0];
+
+        datetime.parse(currentDate);
+        toast({
+            title: "Se a Enviado el mensaje",
+            description: `${currentDate}`,
+        })
+
+        console.log(values)
+
+        form.reset();
     }
 
     return (

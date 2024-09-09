@@ -4,6 +4,8 @@ import "./globals.css";
 import { Nav } from "@/components/main/nav";
 import Hero from "@/components/main/hero";
 import Footer from "@/components/main/footer";
+import { Toaster } from "@/components/ui/toaster";
+
 
 const montserrat = Montserrat({
   weight: ['300', '500', '600'],
@@ -28,8 +30,9 @@ export default function RootLayout({
       >
         <Nav />
         <Hero />
-        {children}
+        <main>{children}</main>
         <Footer />
+        <Toaster />
       </body>
     </html>
   );

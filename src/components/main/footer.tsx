@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <footer className="h-full bg-backgroundGreen grid grid-cols-1 lg:grid-cols-3 gap-12 place-items-center">
             <div className="flex flex-col justify-around max-md:items-center gap-4">
-                <LogoWhite height={48} width={380} className="text-white w-11/12 py-8 box-content" />
+                <LogoWhite height={48} width={250} className="text-white w-11/12 py-8 box-content" />
                 <p className="text-secondary-foreground text-lg flex flex-row items-center gap-3">
                     <span className="bg-white h-8 w-8 rounded-full flex justify-center items-center"><Mail className="fill-secondary w-6 h-6" /></span>   nahehot947@sofrge.com
                 </p>

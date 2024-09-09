@@ -24,7 +24,7 @@ export function Nav() {
     return (
         <header className="z-40 sticky top-0 flex justify-between lg:px-16 xl:px-28 h-16 items-center gap-4 border-b border- bg-background px-4">
             <Link href="/" className="w-9/12 md:w-full resize overflow-auto flex items-center gap-2 text-lg font-semibold md:text-base">
-                <Logo width={390} height={48} />
+                <Logo width={250} height={48} />
                 <span className="sr-only">Inicio</span>
             </Link>
             <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">

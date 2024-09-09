@@ -1,4 +1,4 @@
-import IconoPsicoterapy from "@/assets/icons/logo-inpsac"
+import IconoPsicoterapy from "@/assets/icons/iconoPsicoterapy"
 import imgRe from "@/assets/hero/desktop.jpg"
 import {
     Card,

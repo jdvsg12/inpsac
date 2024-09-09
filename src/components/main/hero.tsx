@@ -25,7 +25,7 @@ const Hero = () => {
                         <div className="md:h-full lg:h-[60svh] xl:h-[90svh] grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 place-items-end">
                             <div className="flex flex-col justify-center py-16 md:py-0 md:h-full mt-10 md:mt-0 px-11 md:px-16 lg:px-16 xl:px-28 capitalize text-secondary gap-6">
                                 <h1 className="font-bold tracking-tighter text-4xl md:text-2xl lg:text-4xl xl:text-6xl text-pretty">
-                                    Tu bienestar mental, nuestra prioridad.
+                                    No hay sufrimiento insignificante
                                 </h1>
                                 <p className="text-gray-500 md:text-base lg:text-xl">
                                     Descubre herramientas y apoyo para una mente sana.
