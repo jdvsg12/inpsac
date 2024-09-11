@@ -13,6 +13,10 @@ const links = [
         href: '/',
     },
     {
+        label: 'Blog',
+        href: '/contact',
+    },
+    {
         label: 'Contato',
         href: '/contact',
     },
@@ -23,7 +27,7 @@ export function Nav() {
 
     return (
         <header className="z-40 sticky top-0 flex justify-between lg:px-16 xl:px-28 h-16 items-center gap-4 border-b border- bg-background px-4">
-            <Link href="/" className="w-9/12 md:w-full resize overflow-auto flex items-center gap-2 text-lg font-semibold md:text-base">
+            <Link href="/" className="w-9/12 md:w-full resize flex items-center gap-2 text-lg font-semibold md:text-base">
                 <Logo width={250} height={48} />
                 <span className="sr-only">Inicio</span>
             </Link>

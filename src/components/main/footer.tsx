@@ -3,6 +3,21 @@ import { Facebook, Instagram, Phone, Twitter } from "lucide-react"
 import Link from "next/link"
 import { Mail } from "lucide-react"
 
+const links = [
+    {
+        label: 'Inicio',
+        href: '/',
+    },
+    {
+        label: 'Blog',
+        href: '/contact',
+    },
+    {
+        label: 'Contato',
+        href: '/contact',
+    },
+]
+
 
 
 const Footer = () => {
@@ -35,12 +50,12 @@ const Footer = () => {
                 </Link>
             </div>
             <ul className="flex flex-row lg:flex-col list-none mt-4 gap-4 [&_li]:md:text-xl">
-                <li><Link href="#" className="text-secondary-foreground hover:text-secondary/70">Inicio</Link></li>
-                <li><Link href="#" className="text-secondary-foreground hover:text-secondary/70">Blog</Link></li>
-                <li><Link href="#" className="text-secondary-foreground hover:text-secondary/70">Contacto</Link></li>
+                {links.map(({ label, href }) => (
+                    <li key={label}><Link href={href} className="text-secondary-foreground hover:text-secondary/70">{label}</Link></li>
+                ))}
             </ul>
             <p className="text-secondary-foreground text-2xl lg:col-span-3 font-light pb-7">
-                &copy; 2024 INPSAC
+                &copy; 2024 Psicología y Cultura
             </p>
         </footer>
     )
