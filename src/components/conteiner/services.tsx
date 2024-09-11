@@ -12,8 +12,8 @@ import Image from "next/image"
 
 const Services = () => {
     return (
-        <section className="h-auto md:h-full lg:h-[60svh] bg-backgroundSecondary py-8  lg:px-16 xl:px-28 flex flex-col justify-center">
-            <h2 className="text-5xl text-center md:text-left text-secondary font-bold capitalize">services</h2>
+        <section className="h-auto md:h-full bg-backgroundSecondary py-8  lg:px-16 xl:px-28 flex flex-col justify-center">
+            <h2 className="text-5xl text-center md:text-left text-secondary font-bold capitalize">servicios</h2>
             <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] place-items-center gap-10">
                 <Card className="border-0 mt-12 w-10/12 md:w-full">
                     <CardHeader>
