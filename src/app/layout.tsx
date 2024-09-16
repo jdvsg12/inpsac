@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Montserrat } from 'next/font/google'
 import "./globals.css";
 import { Nav } from "@/components/main/nav";
-import Hero from "@/components/main/hero";
 import Footer from "@/components/main/footer";
 import { Toaster } from "@/components/ui/toaster";
 
@@ -29,7 +28,6 @@ export default function RootLayout({
         className={montserrat.className}
       >
         <Nav />
-        <Hero />
         <main>{children}</main>
         <Footer />
         <Toaster />
