@@ -1,12 +1,10 @@
-import Biography from "@/components/conteiner/biography";
-import FormContact from "@/components/conteiner/formContact";
+import Blog from "@/components/conteiner/blog";
 
 
 export default function page() {
     return (
         <div>
-            <Biography />
-            <FormContact />
+            <Blog />
         </div>
     )
 }

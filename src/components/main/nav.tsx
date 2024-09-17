@@ -14,7 +14,7 @@ const links = [
     },
     {
         label: 'Blog',
-        href: '/contact',
+        href: '/blog',
     },
     {
         label: 'Contato',
