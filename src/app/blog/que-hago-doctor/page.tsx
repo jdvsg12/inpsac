@@ -1,11 +1,8 @@
 'use client'
 
 // import { useState } from 'react'
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Textarea } from "@/components/ui/textarea"
-import { Button } from "@/components/ui/button"
-import { SendIcon } from "lucide-react"
 import Image from "next/image"
 import banner from "@/assets/blog/banner.jpg"
 
@@ -21,7 +18,7 @@ export default function page() {
                     className='object-cover overflow-hidden max-h-[600px] object-top rounded-xl aspect-auto mb-4 mx-auto border'
                 />
                 <Card className="mb-8">
-                    <CardHeader>
+                    <CardHeader className="max-w-5xl mx-auto">
                         <div className="flex items-center mt-4">
                             <Avatar className="h-10 w-10">
                                 <AvatarImage src="/placeholder.svg?height=40&width=40" alt="Eduardo Montenegro Flórez" />
@@ -32,9 +29,10 @@ export default function page() {
                                 <p className="text-sm text-gray-500">Psicólogo, Esp. Mg. Psicopatología y Salud Mental</p>
                             </div>
                         </div>
-                        <CardTitle className="text-3xl font-bold max-w-3xl mx-auto pt-20">¿Qué hago doctor?</CardTitle>
                     </CardHeader>
                     <CardContent>
+                        <CardTitle className="text-3xl font-bold max-w-3xl mx-auto pt-20 mb-8">¿Qué hago doctor?</CardTitle>
+
                         <div className="space-y-4 max-w-3xl mx-auto" >
                             <p>Cualquier camino es imposible cuando se espera que sea otro el que camine. Esta es una confesión, la hago al inicio de este blog ahora más estructurado que hace nueve años. Era 2015 cuando decidí iniciar alguna formación en Psicoanálisis en Buenos Aires (Argentina), para ese entonces ya era profesional en Psicología y tenía 23 años. Inocentes 23 años. ¿Qué pretendía? Ser psicoanalista ¿Para qué? Ser psicoanalista ¿En qué institución? Ser psicoanalista ¿Tendría el presupuesto necesario? Ser psicoanalista. Por lo menos puedo decir que deseo había, pero a qué se articulaba, Ser… Psicoanalista, la más grosera pero inocente incompatibilidad.</p>
 
@@ -57,24 +55,21 @@ export default function page() {
                             <p>¿Tú también has enfrentado situaciones en las que buscaste una fórmula mágica? Comparte tu experiencia y hablemos en los comentarios.</p>
                         </div>
                     </CardContent>
+                    <CardFooter className="max-w-5xl mx-auto my-8">
+                        <div className="flex items-center mt-4">
+                            <Avatar className="h-10 w-10">
+                                <AvatarImage src="/placeholder.svg?height=40&width=40" alt="Eduardo Montenegro Flórez" />
+                                <AvatarFallback>EM</AvatarFallback>
+                            </Avatar>
+                            <div className="ml-4">
+                                <p className="text-sm font-medium">Eduardo Montenegro Flórez</p>
+                                <p className="text-sm text-gray-500">Psicólogo, Esp. Mg. Psicopatología y Salud Mental</p>
+                            </div>
+                        </div>
+                    </CardFooter>
                 </Card>
 
-                <Card className="max-w-3xl mx-auto">
-                    <CardHeader>
-                        <CardTitle>Comentarios</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <form >
-                            <Textarea
-                                placeholder="Escribe tu comentario aquí..."
-                                className="mb-4"
-                            />
-                            <Button type="submit">
-                                <SendIcon className="mr-2 h-4 w-4" /> Enviar comentario
-                            </Button>
-                        </form>
-                    </CardContent>
-                </Card>
+
             </div>
         </div>
     )
