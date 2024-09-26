@@ -15,6 +15,9 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "../ui/form"
 import { Textarea } from "../ui/textarea"
+import { useEffect, useState } from "react"
+import { collection, addDoc } from "firebase/firestore"
+import { db } from "@/firebase/firebase";
 
 const formSchema = z.object({
     username: z.string().min(2),
@@ -25,6 +28,23 @@ const formSchema = z.object({
 
 const FormContact = () => {
     const { toast } = useToast()
+    const [dataForm, setDataForm] = useState<z.infer<typeof formSchema>>()
+
+    useEffect(() => {
+        try {
+            if (dataForm) {
+                addDoc(collection(db, "message"), {
+                    username: dataForm.username,
+                    email: dataForm.email,
+                    message: dataForm.message,
+                });
+            }
+        } catch (error) {
+            console.error("Error adding document:", error);
+
+        }
+
+    }, [dataForm])
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -46,8 +66,7 @@ const FormContact = () => {
             description: `${currentDate}`,
         })
 
-        console.log(values)
-
+        setDataForm(values)
         form.reset();
     }
 

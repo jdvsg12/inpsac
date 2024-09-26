@@ -5,6 +5,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import Image from "next/image"
 import banner from "@/assets/blog/banner.jpg"
+import ShareButton from "@/components/ui/shareButton"
 
 
 export default function page() {
@@ -55,8 +56,8 @@ export default function page() {
                             <p>¿Tú también has enfrentado situaciones en las que buscaste una fórmula mágica? Comparte tu experiencia y hablemos en los comentarios.</p>
                         </div>
                     </CardContent>
-                    <CardFooter className="max-w-5xl mx-auto my-8">
-                        <div className="flex items-center mt-4">
+                    <CardFooter className="flex justify-between items-center max-w-5xl mx-auto my-8">
+                        <div className="flex items-center">
                             <Avatar className="h-10 w-10">
                                 <AvatarImage src="/placeholder.svg?height=40&width=40" alt="Eduardo Montenegro Flórez" />
                                 <AvatarFallback>EM</AvatarFallback>
@@ -66,10 +67,9 @@ export default function page() {
                                 <p className="text-sm text-gray-500">Psicólogo, Esp. Mg. Psicopatología y Salud Mental</p>
                             </div>
                         </div>
+                        <ShareButton />
                     </CardFooter>
                 </Card>
-
-
             </div>
         </div>
     )
