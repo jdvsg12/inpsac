@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { Montserrat } from 'next/font/google'
 import "./globals.css";
@@ -17,7 +18,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Psicología y Cultura",
   description: "Estamos comprometidos en promover una cultura de la escucha para que ninguna forma de sufrimiento sea considerada insignificante.",
-  keywords: 'Psicologia, Pscoterapia, Psicoanalisis, Salud Mental, Atención Psicológica, Supervisión , Cultura',
+  keywords: ',Psicoterapia online, Escucha psicoanalítica, Sufrimiento emocional, Supervisión clínica, Salud mental, Terapia psicoanalítica, Formación en psicoanálisis, Reflexión clínica, Cultura de la escucha, Dirección de la cura',
 };
 
 export default function RootLayout({
