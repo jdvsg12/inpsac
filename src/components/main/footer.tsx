@@ -13,7 +13,7 @@ const links = [
         href: '/blog',
     },
     {
-        label: 'Contato',
+        label: 'Contacto',
         href: '/contact',
     },
 ]
