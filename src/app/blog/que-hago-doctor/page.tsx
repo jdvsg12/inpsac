@@ -7,13 +7,11 @@ import type { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-    title: "Psicología y Cultura | ¿Qué hago doctor?",
-    description: "Cualquier camino es imposible cuando se espera que sea otro el que camine. Esta es una confesión, la hago al inicio de este blog ahora más estructurado que hace nueve años. Era 2015 cuando decidí iniciar alguna formación en Psicoanálisis en Buenos Aires (Argentina), para ese entonces ya era profesional en Psicología y tenía 23 años.",
-    keywords: 'Psicoanálisis, Psicoterapia, Ser psicoanalista, Freud y Lacan, Salud mental, Autoconocimiento, Sufrimiento emocional, Análisis personal, Supervisión clínica ,Transformación personal',
-
+    openGraph: {
+        title: "Psicología y Cultura | ¿Qué hago doctor?",
+        description: "Cualquier camino es imposible cuando se espera que sea otro el que camine. Esta es una confesión, la hago al inicio de este blog ahora más estructurado que hace nueve años. Era 2015 cuando decidí iniciar alguna formación en Psicoanálisis en Buenos Aires (Argentina), para ese entonces ya era profesional en Psicología y tenía 23 años.",
+    },
 };
-
-
 
 export default function page() {
 
