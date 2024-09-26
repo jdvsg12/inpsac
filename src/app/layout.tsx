@@ -12,9 +12,12 @@ const montserrat = Montserrat({
   subsets: ['latin'],
 })
 
+
+
 export const metadata: Metadata = {
   title: "Psicología y Cultura",
-  description: "Descubre apoyo personalizado para tu bienestar mental en Psicolgía y cultura. Ofrecemos terapias efectivas y recursos especializados para ayudarte a vivir una vida equilibrada y feliz. Contáctanos para más información.",
+  description: "Estamos comprometidos en promover una cultura de la escucha para que ninguna forma de sufrimiento sea considerada insignificante.",
+  keywords: 'Psicologia, Pscoterapia, Psicoanalisis, Salud Mental, Atención Psicológica, Supervisión , Cultura',
 };
 
 export default function RootLayout({
