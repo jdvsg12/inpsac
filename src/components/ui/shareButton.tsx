@@ -14,8 +14,8 @@ function ShareButton() {
     const pathname = usePathname()
     const { toast } = useToast()
     const shareUrl = `${typeof window !== 'undefined' ? window.location.origin : ''}${pathname}`
-    const shareTitle = "Check out this page!"
-    const shareText = "I found this interesting page and thought you might like it."
+    const shareTitle = "¡Mira esta página!"
+    const shareText = "Encontré esta página interesante y pensé que podría gustarte."
 
     const handleNativeShare = async () => {
         if (navigator.share) {
@@ -48,14 +48,14 @@ function ShareButton() {
         try {
             await navigator.clipboard.writeText(shareUrl)
             toast({
-                title: "Link copied!",
-                description: "The page URL has been copied to your clipboard.",
+                title: "Link copiado!",
+                description: "La URL de La página ha sido copiada.",
             })
         } catch (error) {
             console.error('Error copying link:', error)
             toast({
-                title: "Copy failed",
-                description: "There was an error copying the link. Please try again.",
+                title: "Fallo la copia",
+                description: "Tuvimos un error copiando el link, intentalo nuevamente.",
                 variant: "destructive",
             })
         }
