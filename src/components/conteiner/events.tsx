@@ -23,7 +23,7 @@ import Link from "next/link"
 const EventInfo = [
     {
         title: 'Taller teórico-clínico.',
-        date: '6 Noviembre',
+        date: 'Noviembre 6',
         subtitle: 'El fin de la vida y su cuestionamiento en el análisis',
         description: ' En momentos de profundo malestar, los pacientes llegan a cuestionar el sentido de la vida al no encontrar una vía que les ofrezca alivio. ¿Se trata de un deseo inconsciente relacionado con la idea de poner fin a la vida? ¿Es un llamado al analista para que intervenga? ¿Debe el psicoanalista seguir un protocolo específico ante estas situaciones? A lo largo de dos encuentros exploraremos estas y otras preguntas, combinando teoría y clínica, para reflexionar sobre el papel del analista en estos momentos cruciales del proceso analítico.',
     }
