@@ -23,7 +23,7 @@ import Link from "next/link"
 const EventInfo = [
     {
         title: 'Taller teórico-clínico.',
-        date: '2 Octubre',
+        date: '6 Noviembre',
         subtitle: 'El fin de la vida y su cuestionamiento en el análisis',
         description: ' En momentos de profundo malestar, los pacientes llegan a cuestionar el sentido de la vida al no encontrar una vía que les ofrezca alivio. ¿Se trata de un deseo inconsciente relacionado con la idea de poner fin a la vida? ¿Es un llamado al analista para que intervenga? ¿Debe el psicoanalista seguir un protocolo específico ante estas situaciones? A lo largo de dos encuentros exploraremos estas y otras preguntas, combinando teoría y clínica, para reflexionar sobre el papel del analista en estos momentos cruciales del proceso analítico.',
     }
@@ -44,36 +44,32 @@ const Events = () => {
                             <CardDescription className="mb-2 text-base md:text-lg">{subtitle}</CardDescription>
                         </CardHeader>
                         <CardContent className="flex flex-col justify-around">
-                            <CardDescription className="text-lg md:text-xl line-clamp-4">
+                            <CardDescription className="text-lg md:text-xl">
                                 {description}
                             </CardDescription>
                             <Drawer>
                                 <DrawerTrigger className="text-lg md:text-2xl text-secondary hover:bg-secondary-foreground flex flex-row justify-center items-center w-fit px-0 mt-5">
-                                    Leer
+                                    Ver más
                                     <ChevronsRight className="h-10 w-10" />
                                 </DrawerTrigger>
                                 <DrawerContent className="my-2">
                                     <div className="flex flex-col max-lg:h-[40svh] max-md:gap-4 max-lg:overflow-scroll lg:flex-row md:justify-between my-5 lg:w-8/12 mx-auto">
-                                        <div className="flex flex-col gap-4 justify-start items-start">
+                                        <div className="flex flex-col gap-4 justify-start items-start max-w-xs">
                                             <DrawerTitle>Contenidos</DrawerTitle>
                                             <DrawerDescription className="flex flex-col gap-2">
                                                 <DrawerTitle>Encuentro 1</DrawerTitle>
-                                                <ul>
-                                                    <li>La vida desde la filosofía y el psicoanálisis</li>
-                                                    <li>Acting out y pasaje al acto</li>
-                                                    <li>La idea de dar fin a la vida</li>
-                                                </ul>
+                                                El sujeto frente al fin de la vida, exploración desde el psicoanálisis lacaniano
                                             </DrawerDescription>
                                             <DrawerDescription>
                                                 <DrawerTitle>Encuentro 2</DrawerTitle>
-                                                Taller: articulación clínica grupal
+                                                Articulación de caso clínico
                                             </DrawerDescription>
                                         </div>
                                         <div className="flex flex-col gap-4">
                                             <DrawerTitle>Fechas</DrawerTitle>
                                             <DrawerDescription className="flex flex-row gap-3">
                                                 <div className="flex flex-col gap-2">
-                                                    <strong>octubre 2 y 9</strong>
+                                                    <strong>noviembre 6 y 20</strong>
                                                     <DrawerTitle>Hora:</DrawerTitle>
                                                     <ul>
                                                         <li>20:30 (Col.)</li>

@@ -3,14 +3,11 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import Image from "next/image"
 import banner from "@/assets/blog/banner.jpg"
 import ShareButton from "@/components/ui/shareButton"
-import type { Metadata } from "next";
 
 
-export const metadata: Metadata = {
-    openGraph: {
-        title: "Psicología y Cultura | ¿Qué hago doctor?",
-    },
-};
+export const metadata = {
+    title: "Psicología y Cultura | ¿Qué hago doctor?",
+}
 
 export default function page() {
 
