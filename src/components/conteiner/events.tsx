@@ -23,9 +23,9 @@ import Link from "next/link"
 const EventInfo = [
     {
         title: 'Taller teórico-clínico.',
-        date: 'Noviembre 6',
+        date: 'Diciembre 10',
         subtitle: 'El fin de la vida y su cuestionamiento en el análisis',
-        description: ' En momentos de profundo malestar, los pacientes llegan a cuestionar el sentido de la vida al no encontrar una vía que les ofrezca alivio. ¿Se trata de un deseo inconsciente relacionado con la idea de poner fin a la vida? ¿Es un llamado al analista para que intervenga? ¿Debe el psicoanalista seguir un protocolo específico ante estas situaciones? A lo largo de dos encuentros exploraremos estas y otras preguntas, combinando teoría y clínica, para reflexionar sobre el papel del analista en estos momentos cruciales del proceso analítico.',
+        description: 'Cuando un paciente consulta con preocupaciones en torno a ideas, impulsos o intentos relacionados con el fin de su vida, la escucha del analista requiere una agudeza particular. Desde el psicoanálisis, si bien no se pretende imponer una dirección específica a la vida del paciente, existe una apuesta por la preservación de la vida en su sentido más ético. ¿Cómo entonces articular la dirección de la cura con la posibilidad de sostener el deseo de vivir en quien acude al analista? A lo largo de dos sesiones, exploraremos esta pregunta y construiremos herramientas teóricas y prácticas que faciliten el abordaje analítico cuando el pensamiento, el impulso o el acto de poner fin a la vida se hace presente en el consultorio.',
     }
 
 ]
@@ -57,11 +57,15 @@ const Events = () => {
                                         <div className="flex flex-col gap-4 justify-start items-start max-w-xs">
                                             <DrawerTitle>Contenidos</DrawerTitle>
                                             <DrawerDescription className="flex flex-col gap-2">
-                                                <DrawerTitle>Encuentro 1</DrawerTitle>
-                                                El sujeto frente al fin de la vida, exploración desde el psicoanálisis lacaniano
+                                                <DrawerTitle>Sesión 1</DrawerTitle>
+                                                <ul className="list-disc">
+                                                    <li>El cuestionamiento de la vida como motivo de consulta</li>
+                                                    <li>La ideación y planeación suicida</li>
+                                                    <li>Pasaje al acto y acting out</li>
+                                                </ul>
                                             </DrawerDescription>
                                             <DrawerDescription>
-                                                <DrawerTitle>Encuentro 2</DrawerTitle>
+                                                <DrawerTitle>Sesión 2</DrawerTitle>
                                                 Articulación de caso clínico
                                             </DrawerDescription>
                                         </div>
@@ -69,13 +73,13 @@ const Events = () => {
                                             <DrawerTitle>Fechas</DrawerTitle>
                                             <DrawerDescription className="flex flex-row gap-3">
                                                 <div className="flex flex-col gap-2">
-                                                    <strong>noviembre 6 y 20</strong>
+                                                    <strong>Diciembre 10 y 12</strong>
                                                     <DrawerTitle>Hora:</DrawerTitle>
                                                     <ul>
-                                                        <li>20:30 (Col.)</li>
-                                                        <li>20:30 (Ec.)</li>
-                                                        <li>19:30 (Mex.)</li>
-                                                        <li>22:30 (Arg.)</li>
+                                                        <li>19:00 (Col.)</li>
+                                                        <li>19:00 (Ec.)</li>
+                                                        <li>18:00 (Mex.)</li>
+                                                        <li>21:00 (Arg.)</li>
                                                     </ul>
                                                 </div>
                                             </DrawerDescription>
@@ -84,19 +88,19 @@ const Events = () => {
                                             <DrawerTitle>Costos</DrawerTitle>
                                             <DrawerDescription>
                                                 <DrawerTitle>Colombia:</DrawerTitle>
-                                                COP50000
+                                                COP $100.000
                                             </DrawerDescription>
                                             <DrawerDescription>
                                                 <DrawerTitle>México:</DrawerTitle>
-                                                MXN300
+                                                MXN $520
                                             </DrawerDescription>
                                             <DrawerDescription>
                                                 <DrawerTitle>Ecuador:</DrawerTitle>
-                                                USD15
+                                                USD $25
                                             </DrawerDescription>
                                             <DrawerDescription>
                                                 <DrawerTitle>Argentina:</DrawerTitle>
-                                                ARS21000
+                                                ARS $30.000
                                             </DrawerDescription>
                                             <DrawerDescription>
                                                 <DrawerTitle>Otro país:</DrawerTitle>
