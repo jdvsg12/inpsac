@@ -8,7 +8,10 @@ import ShareButton from "@/components/ui/shareButton"
 export const metadata = {
     title: "Psicología y Cultura | Ni más, ni menos.",
     description: "Imagina por un momento que aparece un demonio, tal como lo suponemos ahora: maligno y portador de desgracias. Este demonio te dice: vas a ser en tu vida lo que tu nombre signifique en mi libro de significados, ni más, ni menos. Recién iniciamos 2025 y no podríamos esperar menos de un demonio sino que trabaje con las herramientas que brinda nuestra era de las tecnologías de información y comunicación; su libro de significados, por supuesto, es ChatGPT.",
-    keywords: 'Psicoanálisis moderno, Lacan y el Otro ,Significado del nombre ,Construcción de identidad ,Filosofía y psicología,Búsqueda del deseo,Psicología cultural,Falta en psicoanálisis,Interpretación simbólica,Gabriel García Márquez psicoanálisis'
+    keywords: 'Psicoanálisis moderno, Lacan y el Otro ,Significado del nombre ,Construcción de identidad ,Filosofía y psicología,Búsqueda del deseo,Psicología cultural,Falta en psicoanálisis,Interpretación simbólica,Gabriel García Márquez psicoanálisis',
+    openGraph: {
+        images: { banner }
+    }
 }
 
 
