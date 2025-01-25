@@ -70,6 +70,7 @@ export default function page() {
                         </div>
                         <ShareButton />
                     </CardFooter>
+                    <p className="text-xs text-gray-500 mb-10 max-w-[750px] px-4 text-center mx-auto">Te invito a charlar sobre tus dudas, preguntas, aportes o críticas. Escríbeme a WhatsApp, el botón de acceso lo encuentras en la página de inicio.</p>
                 </Card>
             </div>
         </div>
