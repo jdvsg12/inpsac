@@ -18,9 +18,10 @@ const blogCards = [
         link: '/blog/que-hago-doctor',
     },
     {
-        title: '',
-        description: '',
-        link: '/',
+        title: 'Así es tu nombre. Ni más, ni menos.',
+        description: 'Imagina por un momento que aparece un demonio, tal como lo suponemos ahora: maligno y portador de desgracias. Este demonio te dice: vas a ser en tu vida lo que tu nombre signifique en mi libro de significados, ni más, ni menos. Recién iniciamos 2025 y no podríamos esperar menos de un demonio sino que trabaje con las herramientas que brinda nuestra era de las tecnologías de información y comunicación; su libro de significados, por supuesto, es ChatGPT.',
+        button: 'leer',
+        link: '/blog/ni-mas-ni-menos',
     },
     {
         title: '',
