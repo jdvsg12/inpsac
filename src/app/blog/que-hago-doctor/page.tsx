@@ -7,6 +7,8 @@ import ShareButton from "@/components/ui/shareButton"
 
 export const metadata = {
     title: "Psicología y Cultura | ¿Qué hago doctor?",
+    description: "Cualquier camino es imposible cuando se espera que sea otro el que camine. Esta es una confesión, la hago al inicio de este blog ahora más estructurado que hace nueve años. Era 2015 cuando decidí iniciar alguna formación en Psicoanálisis en Buenos Aires (Argentina), para ese entonces ya era profesional en Psicología y tenía 23 años. Inocentes 23 años. ¿Qué pretendía? Ser psicoanalista ¿Para qué? Ser psicoanalista ¿En qué institución? Ser psicoanalista ¿Tendría el presupuesto necesario? Ser psicoanalista. Por lo menos puedo decir que deseo había, pero a qué se articulaba, Ser… Psicoanalista, la más grosera pero inocente incompatibilidad.",
+    keywords: 'Psicoanálisis moderno, Lacan y el Otro ,Significado del nombre ,Construcción de identidad ,Filosofía y psicología,Búsqueda del deseo,Psicología cultural,Falta en psicoanálisis,Interpretación simbólica,Gabriel García Márquez psicoanálisis'
 }
 
 export default function page() {
