@@ -12,16 +12,16 @@ import { ChevronsRight } from "lucide-react"
 
 const blogCards = [
     {
-        title: '¿Qué hago doctor?',
-        description: 'Cualquier camino es imposible cuando se espera que sea otro el que camine. Esta es una confesión, la hago al inicio de este blog ahora más estructurado que hace nueve años. Era 2015 cuando decidí iniciar alguna formación en Psicoanálisis en Buenos Aires (Argentina), para ese entonces ya era profesional en Psicología y tenía 23 años. Inocentes 23 años. ¿Qué pretendía? Ser psicoanalista ¿Para qué? Ser psicoanalista ¿En qué institución? Ser psicoanalista ¿Tendría el presupuesto necesario? Ser psicoanalista. Por lo menos puedo decir que deseo había, pero a qué se articulaba, Ser… Psicoanalista, la más grosera pero inocente incompatibilidad.',
-        button: 'leer',
-        link: '/blog/que-hago-doctor',
-    },
-    {
         title: 'Así es tu nombre. Ni más, ni menos.',
         description: 'Imagina por un momento que aparece un demonio, tal como lo suponemos ahora: maligno y portador de desgracias. Este demonio te dice: vas a ser en tu vida lo que tu nombre signifique en mi libro de significados, ni más, ni menos. Recién iniciamos 2025 y no podríamos esperar menos de un demonio sino que trabaje con las herramientas que brinda nuestra era de las tecnologías de información y comunicación; su libro de significados, por supuesto, es ChatGPT.',
         button: 'leer',
         link: '/blog/ni-mas-ni-menos',
+    },
+    {
+        title: '¿Qué hago doctor?',
+        description: 'Cualquier camino es imposible cuando se espera que sea otro el que camine. Esta es una confesión, la hago al inicio de este blog ahora más estructurado que hace nueve años. Era 2015 cuando decidí iniciar alguna formación en Psicoanálisis en Buenos Aires (Argentina), para ese entonces ya era profesional en Psicología y tenía 23 años. Inocentes 23 años. ¿Qué pretendía? Ser psicoanalista ¿Para qué? Ser psicoanalista ¿En qué institución? Ser psicoanalista ¿Tendría el presupuesto necesario? Ser psicoanalista. Por lo menos puedo decir que deseo había, pero a qué se articulaba, Ser… Psicoanalista, la más grosera pero inocente incompatibilidad.',
+        button: 'leer',
+        link: '/blog/que-hago-doctor',
     },
     {
         title: '',
